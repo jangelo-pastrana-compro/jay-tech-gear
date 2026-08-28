@@ -7,14 +7,19 @@
 
 body {
     font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8fafc;
     color: #1e293b;
     line-height: 1.6;
+    background-image: url(background.png.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 header {
-    background-color: #0f172a;
-    padding: 15px 30px;
+    background-color: transparent;
+    backdrop-filter: none;
+    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,6 +28,7 @@ header {
 header h1 {
     color: #ffffff;
     font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
 }
 
 nav ul {
@@ -32,14 +38,17 @@ nav ul {
 }
 
 nav a {
-    color: #cbd5e1;
+    color: #ffffff;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    letter-spacing: 0.5px;
     transition: color 0.2s ease;
 }
 
 nav a:hover {
-    color: #38bdf8;
+    color: #a855f7;
 }
 
 main {
@@ -155,19 +164,41 @@ footer {
 }
 
 .hero-banner {
-    background-color: #ffffff; 
-    border-bottom: 1px solid #e2e8f0; 
+    background-color: transparent;
+    border-bottom: none; 
     padding: 30px 20px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
 }
 
 .hero-banner p {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #334155; 
-    max-width: 800px;
-    margin: 0 auto;
-    font-style: italic; 
-    line-height: 1.6;
+   color: #ffffff;
+   text-shadow: 0 0 10px rgba(168, 85, 247, 0.8);
+   font-size: 1.25rem;
+   font-weight: center;
+}
+
+body:has(link[href^="../style.css"]) {
+    background-image: url('../background.png.png');
+}
+
+main h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.hero-banner p {
+    color: #f1f5f9;
+}
+
+.section-title {
+    color: #ffffff;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    width: 100%;
 }
