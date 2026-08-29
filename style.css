@@ -9,16 +9,17 @@ body {
     font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #1e293b;
     line-height: 1.6;
-    background-image: url(background.png.png);
-    background-size: cover;
+
+    background-image: url(jayb2.png);
+    background-color: #ffffff;
+    background-size: contain;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
 header {
-    background-color: transparent;
-    backdrop-filter: none;
+    background-color: #0f172a;
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
@@ -28,7 +29,7 @@ header {
 header h1 {
     color: #ffffff;
     font-size: 1.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    text-shadow: 2px 2px 4px rgba(0,0, 0, 0.9);
 }
 
 nav ul {
@@ -117,7 +118,7 @@ main {
 footer {
     text-align: center;
     padding: 40px 0;
-    color: #64748b;
+    color: #161616;
     font-size: 0.9rem;
 }
 
@@ -178,27 +179,94 @@ footer {
 }
 
 body:has(link[href^="../style.css"]) {
-    background-image: url('../background.png.png');
+    background-image: url('../jayb2.png');
+    background-color: #131212;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 main h2 {
-    color: #ffffff;
+    color: #0c0c0c;
     font-size: 2rem;
     text-align: center;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    text-shadow: 2px 2px 4px rgba(77, 70, 70, 0.9);
 }
 
 .hero-banner p {
-    color: #f1f5f9;
+    color: #1e293b;
 }
 
 .section-title {
-    color: #ffffff;
+    color: #030303;
     font-size: 2.2rem;
     text-align: center;
     margin-top: 40px;
     margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    text-shadow: 2px 2px 4px rgba(78, 71, 71, 0.9);
     width: 100%;
+}
+
+.student-subtitle {
+    color: #101111;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(80, 77, 77, 0.9);
+}
+
+.guide-heading {
+    color: #0a0a0a;
+    text-shadow: 2px 2px 4px rgba(80, 77, 77, 0.9);
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 5%;
+}
+
+.about-page-layout {
+    max-width: 1200;
+    margin: 20px auto;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 30px;
+}
+
+.guide-heading {
+    color: #ffffff;
+    font-size: 2.2rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.profile-details h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.profile-details h2 {
+    color: #1b1b1b;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.banana-text {
+    position: absolute;
+    top: 0;
+    left: 325px;
+    width: 400px;
+    color: #1b1b1b;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(122, 115, 115, 0.9);
+    margin: 0;
 }
