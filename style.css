@@ -270,3 +270,17 @@ main h2 {
     text-shadow: 2px 2px 4px rgba(122, 115, 115, 0.9);
     margin: 0;
 }
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
